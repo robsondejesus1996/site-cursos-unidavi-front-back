@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.a`
   ${({ theme }) => css`
     position: fixed;
+    border-radius: 30px;
     background: ${theme.colors.primaryColor};
     color: ${theme.colors.white};
     display: flex;

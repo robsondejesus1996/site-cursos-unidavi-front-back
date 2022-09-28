@@ -2,7 +2,7 @@ import P from 'prop-types';
 import * as Styled from './styles';
 import { Menu } from '../../components/Menu';
 import { Footer } from '../../components/Footer';
-import { GoTop } from '../../components/GoTop';
+import { Whatsapp } from '../../components/Whatsapp';
 
 export const Base = ({ links, logoData, footerHtml, children }) => {
   const handleClick = (e) => {
@@ -17,7 +17,7 @@ export const Base = ({ links, logoData, footerHtml, children }) => {
         {children}
         <Footer footerHtml={footerHtml} />
       </Styled.Container>
-      <GoTop handleClick={handleClick} />
+      <Whatsapp />
     </>
   );
 };
