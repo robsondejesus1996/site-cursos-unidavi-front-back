@@ -1,0 +1,11 @@
+Inicialização Strapi
+
+- npm run develop
+http://localhost:1337
+
+
+Banco de dados 
+https://customer.elephantsql.com/instance
+
+Cloudinary fotos 
+https://cloudinary.com/
