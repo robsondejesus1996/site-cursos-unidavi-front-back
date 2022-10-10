@@ -1,5 +1,6 @@
-import { GridTwoColumn } from '../GridTwoColumns';
-import mock from '../GridTwoColumns/mock'
+import { GridTwoColumn } from '.';
+
+import mock from './mock'
 
 export default {
   title: 'GridTwoColumn',
