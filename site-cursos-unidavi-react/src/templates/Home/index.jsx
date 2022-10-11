@@ -25,7 +25,7 @@ function Home() {
   useEffect(() => {
     const load = async () => {
       const pathName = location.pathname.replace(/[^a-z0-9-_]/gi, '');
-      const slug = pathName ? pathName : 'sistemas-de-informacao';
+      const slug = pathName ? pathName : 'olha-so-a-minha-pagina-1';
 
       try {
         const data = await fetch(`http://localhost:1337/api/pages/?filters[slug]=${slug}&populate=deep`,);

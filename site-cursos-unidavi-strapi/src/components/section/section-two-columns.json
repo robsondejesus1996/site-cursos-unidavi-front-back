@@ -6,11 +6,11 @@
   },
   "options": {},
   "attributes": {
-    "tile": {
+    "title": {
       "type": "string",
       "required": true,
-      "minLength": 3,
-      "maxLength": 255
+      "maxLength": 255,
+      "minLength": 3
     },
     "description": {
       "type": "text",

@@ -2,7 +2,7 @@
   "collectionName": "components_section_text_grids",
   "info": {
     "displayName": "text-grid",
-    "icon": "ad"
+    "icon": "address-card"
   },
   "options": {},
   "attributes": {
@@ -11,7 +11,7 @@
       "required": true
     },
     "description": {
-      "type": "string",
+      "type": "text",
       "required": true
     }
   }

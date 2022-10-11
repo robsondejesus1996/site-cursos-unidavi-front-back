@@ -2,7 +2,7 @@
   "collectionName": "components_menu_menu_links",
   "info": {
     "displayName": "menu_link",
-    "icon": "align-justify"
+    "icon": "align-left"
   },
   "options": {},
   "attributes": {
@@ -16,7 +16,8 @@
     },
     "open_in_new_tab": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "required": true
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "site-cursos-unidavi-strapi",
+  "name": "strapi-landing-pages-2",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -10,21 +10,21 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.3.8",
-    "@strapi/plugin-i18n": "4.3.6",
-    "@strapi/plugin-users-permissions": "4.3.6",
-    "@strapi/provider-upload-cloudinary": "^4.3.6",
-    "@strapi/strapi": "4.3.6",
-    "pg": "8.6.0"
+    "@strapi/plugin-i18n": "4.1.12",
+    "@strapi/plugin-users-permissions": "4.1.12",
+    "@strapi/provider-upload-cloudinary": "^4.1.12",
+    "@strapi/strapi": "4.1.12",
+    "pg": "8.7.3",
+    "strapi-plugin-populate-deep": "^0.1.2"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "7e1b5de8-f0a2-4837-982d-36f51dc777b0"
+    "uuid": "bb4ff677-080e-440f-a6cf-4dbe6db074c7"
   },
   "engines": {
-    "node": ">=14.19.1 <=16.x.x",
+    "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
