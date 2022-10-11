@@ -25,21 +25,14 @@ function Home() {
   useEffect(() => {
     const load = async () => {
       const pathName = location.pathname.replace(/[^a-z0-9-_]/gi, '');
-      const slug = pathName ? pathName : 'landing-page';
+      const slug = pathName ? pathName : 'sistemas-de-informacao';
 
       try {
-        // http://localhost:1337/api/pages/?slug=olha-so-a-minha-pagina-1
-        // http://localhost:1337/api/pages/?olha-so-a-minha-pagina-21
-        
-        const data = await fetch(
-          `https://strapi-v4-test.herokuapp.com/api/pages/?filters[slug]=${slug}&populate=deep`,
-        );
+        const data = await fetch(`http://localhost:1337/api/pages/?filters[slug]=${slug}&populate=deep`,);
         const json = await data.json();
         const { attributes } = json.data[0];
         const pageData = mapData([attributes]);
         setData(() => pageData[0]);
-
-        console.log(pageData)
       } catch {
         setData(undefined);
       }
@@ -53,6 +46,7 @@ function Home() {
       isMounted.current = false;
     };
   }, [location]);
+
 
   useEffect(() => {
     if (data === undefined) {
