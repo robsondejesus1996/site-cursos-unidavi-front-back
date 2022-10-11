@@ -14,6 +14,9 @@ import { useLocation } from 'react-router-dom';
 
 import config from '../../config/index';
 
+
+
+
 function Home() {
   const [data, setData] = useState([]);
   const isMounted = useRef(true);
@@ -27,6 +30,7 @@ function Home() {
       try {
         // http://localhost:1337/api/pages/?slug=olha-so-a-minha-pagina-1
         // http://localhost:1337/api/pages/?olha-so-a-minha-pagina-21
+        
         const data = await fetch(
           `https://strapi-v4-test.herokuapp.com/api/pages/?filters[slug]=${slug}&populate=deep`,
         );
